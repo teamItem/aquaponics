@@ -20,6 +20,12 @@ npm run build
 npm run lint
 ```
 
+### 自定义配置
+配置引用(https://cli.vuejs.org/config/).
+
+### 本项目出自于
+官方github(https://github.com/marsgis/MarsGIS-for-Cesium).
+
 ### 注意事项
 
 建议使用vue-cli@3以下的版本，经过测试目前vue-cli4@代理配置无效。
