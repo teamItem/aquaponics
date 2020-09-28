@@ -4,18 +4,11 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 const routes = [{
-        path: '/',
-        name: 'Index',
-        component: () =>
-            import ('../components/HelloWorld.vue')
-    },
-    {
-        path: '/Test',
-        name: 'test',
-        component: () =>
-            import ('../components/test.vue')
-    }
-];
+    path: '/',
+    name: 'Index',
+    component: () =>
+        import ('../components/HelloWorld.vue')
+}];
 
 const router = new VueRouter({
     mode: 'history',

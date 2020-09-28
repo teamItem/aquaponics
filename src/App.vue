@@ -6,11 +6,14 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Paths from './model/paths.vue'
+import Rects from './model/rects.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Paths,Rects
   }
 }
 </script>
