@@ -1,0 +1,248 @@
+#left {
+    // height: 1000px;
+    // width: 1700px;
+    border: 1px red solid;
+    position: absolute;
+    top: 80px;
+    left: 160px;
+    z-index: 2;
+
+    .top {
+        height: 640px;
+        width: 1680px;
+        background: url("~@/assets/img/back-1.png") no-repeat;
+        background-size: 100% 100%;
+        padding: 0px 80px;
+        position: relative;
+
+        .title {
+            padding-top: 60px;
+
+            .iconfont {
+                height: 24px;
+                width: 18px;
+                color: #FA6235;
+                font-size: 36px;
+            }
+
+            span {
+                color: #FFFFFF;
+                font-size: 36px;
+                margin-left: 20px;
+            }
+        }
+
+        .title-btn {
+            display: flex;
+            color: #7D97BB;
+            font-size: 24px;
+            position: absolute;
+            top: 44px;
+            right: 60px;
+        }
+
+        .btn-div {
+            line-height: 68px;
+            width: 192px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .btn-show {
+            color: #FFFFFF;
+            background: url("~@/assets/img/btndiv.png") no-repeat center;
+            animation-name: btnAnimation;
+            animation-duration: 0.2s;
+            -webkit-animation-name: btnAnimation;
+            -webkit-animation-duration: 0.2s;
+        }
+
+
+        @keyframes btnAnimation {
+            // from {
+            //     left: 20px;
+            // }
+
+            // to {
+            //     left: 30px;
+            // }
+
+            0% {
+                background-size: 0% 0%;
+            }
+
+            25% {
+                background-size: 25% 25%;
+            }
+
+            50% {
+                background-size: 50% 50%;
+            }
+
+            75% {
+                background-size: 75% 75%;
+            }
+
+            100% {
+                background-size: 100% 100%
+            }
+        }
+
+        .carousel {
+            .el-carousel {
+                margin-top: 50px;
+            }
+
+            .el-carousel__container {
+                height: 453px;
+            }
+
+            .el-carousel__item .medium {
+                height: 315px;
+            }
+
+            .el-carousel__item .medium {
+                font-size: 32px;
+                color: #FFFFFF;
+            }
+
+            ul {
+                display: none;
+            }
+
+            .el-carousel__arrow--right,
+            .el-carousel__arrow--left {
+                display: none;
+            }
+
+            .medium {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                text-align: justify;
+            }
+
+            // 系统2水质
+            .inspection,
+            .systemTwo,
+            .outside,
+            .rotating,
+            .electrical {
+                .carousel-data {
+                    width: 1520px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    text-align: justify;
+                    transition: transform 1s;
+
+                    .medium-data {
+                        width: 440px;
+                        height: 106px;
+                        text-align: right;
+
+                        .name {
+                            float: left;
+                            color: #BEC5CC;
+                        }
+
+                        .value,
+                        .util {
+                            font-family: "DIN-Regular";
+                        }
+                    }
+
+                    .behind {
+                        margin-top: 100px;
+                    }
+
+                    .progress {
+                        margin-top: 44px;
+                        margin-bottom: 0px;
+                        border-radius: 100px;
+
+
+                    }
+
+                    .progress,
+                    .el-progress-bar__outer {
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
+
+                    .el-progress-bar__inner {
+                        background: linear-gradient(90deg, rgba(82, 154, 255, 0.1) 0%, #529AFF 100%);
+                    }
+                }
+
+                .medium-bottom {
+                    width: 1520px !important;
+                    position: absolute;
+                    bottom: 60px;
+                }
+
+                .state {
+                    position: absolute;
+                    bottom: 60px;
+                    color: #EDFAFF;
+                    display: flex;
+
+                    .inner {
+                        margin-left: 20px;
+                        font-size: 24px;
+                    }
+                }
+
+                .time {
+                    position: absolute;
+                    right: 0px;
+                    bottom: 60px;
+                    font-size: 28px;
+                    color: #EDFAFF;
+                    font-family: "DIN-Regular";
+                }
+            }
+
+        }
+    }
+
+    // 分页
+    .pagination {
+        width: 100%;
+        text-align: center;
+
+        .btn-prev,
+        .btn-next,
+        ul li {
+            background-color: initial;
+            color: #ffffff;
+        }
+
+        .el-pagination button:disabled {
+            color: #cccccc;
+        }
+
+        button,
+        button i {
+            padding: 0px;
+        }
+
+        button i {
+            font-size: 24px;
+        }
+
+        .el-icon-arrow-left {
+            padding-right: 30px;
+        }
+
+        .el-icon-arrow-right {
+            padding-left: 30px;
+        }
+    }
+
+    // 提示
+    .hint {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+}

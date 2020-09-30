@@ -10,7 +10,6 @@ import 'iview/dist/styles/iview.css';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import 'normalize.css';
-import './assets/style/common.less';
 
 Vue.use(ElementUI, iView);
 Vue.prototype.mars3d = mars3d.mars3d

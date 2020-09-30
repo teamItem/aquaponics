@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'DIN';
+    /* 重命名字体名 */
+    src: url('../font/DIN.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

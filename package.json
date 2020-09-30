@@ -41,12 +41,17 @@
         },
         "extends": [
             "plugin:vue/essential",
-            "eslint:recommended"
+            "@vue/standard"
         ],
+        "rules": {
+            "indent": [
+                1,
+                4
+            ]
+        },
         "parserOptions": {
             "parser": "babel-eslint"
-        },
-        "rules": {}
+        }
     },
     "browserslist": [
         "> 1%",

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "DIN-Regular";
+  src: url("DIN-Regular.woff2") format("woff2"),
+       url("DIN-Regular.woff") format("woff"),
+       url("DIN-Regular.ttf") format("truetype"),
+       url("DIN-Regular.eot") format("embedded-opentype"),
+       url("DIN-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

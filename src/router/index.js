@@ -5,9 +5,9 @@ Vue.use(VueRouter);
 
 const routes = [{
     path: '/',
-    name: 'Index',
+    name: 'Home',
     component: () =>
-        import ('../components/HelloWorld.vue')
+        import ('../components/home/home.vue')
 }];
 
 const router = new VueRouter({
