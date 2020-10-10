@@ -1,22 +1,26 @@
 #left {
     // height: 1000px;
     // width: 1700px;
-    border: 1px red solid;
     position: absolute;
     top: 80px;
     left: 160px;
     z-index: 2;
 
-    .top {
+    .report,
+    .status,
+    .datum {
         height: 640px;
         width: 1680px;
         background: url("~@/assets/img/back-1.png") no-repeat;
         background-size: 100% 100%;
-        padding: 0px 80px;
         position: relative;
+        padding: 0px 80px;
+        color: #ffffff;
 
         .title {
+            height: 96px;
             padding-top: 60px;
+            line-height: 36px;
 
             .iconfont {
                 height: 24px;
@@ -31,6 +35,9 @@
                 margin-left: 20px;
             }
         }
+    }
+
+    .datum {
 
         .title-btn {
             display: flex;
@@ -57,16 +64,7 @@
             -webkit-animation-duration: 0.2s;
         }
 
-
         @keyframes btnAnimation {
-            // from {
-            //     left: 20px;
-            // }
-
-            // to {
-            //     left: 30px;
-            // }
-
             0% {
                 background-size: 0% 0%;
             }
@@ -89,6 +87,7 @@
         }
 
         .carousel {
+
             .el-carousel {
                 margin-top: 50px;
             }
@@ -140,6 +139,7 @@
                         width: 440px;
                         height: 106px;
                         text-align: right;
+                        line-height: 32px;
 
                         .name {
                             float: left;
@@ -176,15 +176,17 @@
 
                 .medium-bottom {
                     width: 1520px !important;
+                    height: 24px;
                     position: absolute;
-                    bottom: 60px;
+                    bottom: 55px;
                 }
 
                 .state {
                     position: absolute;
-                    bottom: 60px;
+                    bottom: 55px;
                     color: #EDFAFF;
                     display: flex;
+                    line-height: 24px;
 
                     .inner {
                         margin-left: 20px;
@@ -195,13 +197,174 @@
                 .time {
                     position: absolute;
                     right: 0px;
-                    bottom: 60px;
+                    bottom: 55px;
                     font-size: 28px;
                     color: #EDFAFF;
                     font-family: "DIN-Regular";
                 }
             }
+        }
 
+        // 提示
+        .hint {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    }
+
+    .status {
+        margin-top: 40px;
+
+        .state-border {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .state-list {
+            width: 1520px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0px;
+            transition: transform 1s;
+
+            .status-data {
+                width: 328px;
+                margin-top: 80px;
+
+                .hint {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    font-size: 24px;
+                }
+
+                .inner {
+                    font-size: 36px;
+                    line-height: 36px;
+                }
+
+                .switch {
+                    margin-left: 20px;
+                    width: 120px;
+                    height: 52px;
+                    line-height: 52px;
+                    text-align: center;
+                    border-radius: 26px;
+                    font-size: 24px;
+                    margin-top: 40px;
+                }
+
+                .on {
+                    color: #20F1C8;
+                    border: 2px solid #20F1C8;
+                    box-shadow: 0px 0 20px #20F1C8 inset,
+                }
+
+                .off {
+                    color: #FA6236;
+                    border: 2px solid #FA6236;
+                    box-shadow: 0px 0 20px #FA6236 inset,
+                }
+            }
+
+            .status-data:nth-child(5n) {
+                width: initial;
+            }
+        }
+
+        .status-page {
+            position: absolute;
+            bottom: 60px;
+            height: 24px;
+        }
+
+        .webkit {
+            width: 1520px;
+            overflow-y: auto;
+        }
+
+        .webkit::-webkit-scrollbar {
+            width: 0px;
+        }
+    }
+
+    .report {
+        margin-top: 40px;
+
+        .report-btn {
+            display: flex;
+            color: #7D97BB;
+            font-size: 24px;
+            position: absolute;
+            top: 44px;
+            right: 60px;
+        }
+
+        .report-div {
+            line-height: 68px;
+            width: 192px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .report-show {
+            color: #FFFFFF;
+            background: url("~@/assets/img/btndiv.png") no-repeat center;
+            animation-name: reportAnimation;
+            animation-duration: 0.2s;
+            -webkit-animation-name: reportAnimation;
+            -webkit-animation-duration: 0.2s;
+        }
+
+        @keyframes reportAnimation {
+            0% {
+                background-size: 0% 0%;
+            }
+
+            25% {
+                background-size: 25% 25%;
+            }
+
+            50% {
+                background-size: 50% 50%;
+            }
+
+            75% {
+                background-size: 75% 75%;
+            }
+
+            100% {
+                background-size: 100% 100%
+            }
+        }
+
+        .report-fild {
+            display: flex;
+            position: absolute;
+            top: 178px;
+            right: 60px;
+        }
+
+        .fild-div {
+            line-height: 28px;
+            font-size: 28px;
+            color: #7D97BB;
+            margin-right: 60px;
+            cursor: pointer;
+        }
+
+        .el-select {
+            margin-top: 60px;
+        }
+
+        .echarts {
+            border:1px red solid;
+            position: absolute;
+            bottom: 60px;
+            width: 1520px;
+            height: 335px;
         }
     }
 
@@ -215,6 +378,10 @@
         ul li {
             background-color: initial;
             color: #ffffff;
+        }
+
+        .el-pager {
+            display: none;
         }
 
         .el-pagination button:disabled {
@@ -237,12 +404,5 @@
         .el-icon-arrow-right {
             padding-left: 30px;
         }
-    }
-
-    // 提示
-    .hint {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
     }
 }

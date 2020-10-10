@@ -10,11 +10,14 @@ import 'iview/dist/styles/iview.css';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import 'normalize.css';
+//echarts
+import Echarts from 'echarts'
 
 Vue.use(ElementUI, iView);
 Vue.prototype.mars3d = mars3d.mars3d
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false;
+Vue.prototype.echarts = Echarts
 
 new Vue({
     router,
